@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let users = [
     { greeting: (str) => {
             return 'hello1';
@@ -8,4 +6,5 @@ let users = [
             return 'hello2';
         }, name: 'vasya', age: 44, status: true },
 ];
+export {};
 //# sourceMappingURL=main1-2.js.map

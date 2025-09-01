@@ -1,21 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class User {
-    name;
-    age;
-    status;
-    constructor(name, age, status) {
-        this.name = name;
-        this.age = age;
-        this.status = status;
+    constructor(id, name, age, status) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.status = status;
     }
-    greeting;
 }
-let user = new User('asd', 22, false);
+let user = new User(1, 'asd', 22, false);
 let users = [
-    new User('asd', 223, false)
+    new User(2, 'asd', 30, true),
+    new User(3, 'asd', 11, false)
 ];
+export {};
 //# sourceMappingURL=main1-3.js.map

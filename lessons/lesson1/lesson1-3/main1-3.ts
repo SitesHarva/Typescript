@@ -1,17 +1,22 @@
 class User {
+    id: number;
+    name: string;
+    age: number;
+    status: boolean;
+    greeting?: (str: string) => string;
 
-    constructor(public name: string, public age: number, public status: boolean) {
+    constructor(id: number, name: string, age: number, status: boolean) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.status = status;
     }
-    greeting?: (str: string)=> string
 }
 
-let user:User = new User('asd', 22, false);
+let user: User = new User(1, 'asd', 22, false);
 
 let users: User[] = [
-    
-    new User('asd', 223, false)
-
+    new User(2, 'asd', 30, true),
+    new User(3, 'asd', 11, false)
 ];
+
